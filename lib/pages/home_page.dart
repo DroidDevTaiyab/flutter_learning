@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_learning/widgets/drawer.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -9,16 +10,17 @@ class HomePage extends StatelessWidget {
     return Scaffold(
 
      appBar: AppBar(
-        title: const Text("Android and IOS App"),
+        title: const Text("Android-IOS-Web"),
       ),
 
       body: const Center(
         child: Material(
-          child: Text("Hello Techpass Master"),
+          child: Text("Hello Ali",
+             style: TextStyle(fontSize: 22),),
         ),
       ),
       
-      drawer: const Drawer(),
+      drawer: MyDrawer(),
   
     );
 
